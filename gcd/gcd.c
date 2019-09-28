@@ -15,7 +15,7 @@ int main(int argc, char ** argv){
 	//initialize array of int and convert from args to values
 	int numbers[argc-1];
 	for(int i=1; i<argc; i++){
-		//if not lazy, implement a function that checks for invalid input please
+		//invalid characters would return 0 and cause divide by zero error
 		numbers[i-1] = atoi(argv[i]);		
 	}
 	
